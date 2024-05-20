@@ -1,0 +1,403 @@
+// .navbar {
+//     background-color: rgb(107 2 2);
+
+// }
+
+.booking-tickets-global-contr {
+    background-color: black;
+    // padding-block: 2rem;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    height: calc(100% - 90px);
+
+    @media(max-width:768px) {
+        padding: 1rem;
+
+    }
+}
+
+.booking-ticket-container {
+    background-color: black;
+    padding-inline: 7rem;
+    padding-top: 4rem;
+    height: 100%;
+    border-radius: .5rem;
+    border: 1px solid rgb(79 76 76);
+
+    @media(max-width:960px) {
+
+        padding-inline: 2rem;
+        padding-top: 1rem;
+    }
+
+    @media(max-width:360px) {
+
+        padding-inline: 1rem;
+        padding-top: 1rem;
+    }
+
+    h1 {
+        margin-bottom: 2rem;
+    }
+
+    .tickets-status {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 2rem;
+
+        @media(max-width:768px) {
+            margin-bottom: 0;
+
+        }
+
+        .legend-wrap {
+            display: flex;
+            gap: .8rem;
+            align-items: center;
+            color: rgb(209, 208, 208);
+
+            .available-legends {
+                background-color: black;
+                width: 1rem;
+                height: 1rem;
+                border: 1px solid green;
+                border-radius: .1rem;
+            }
+
+            .filled-legends {
+                background-color: rgb(148, 147, 147);
+                width: 1rem;
+                height: 1rem;
+                border: none;
+                border-radius: .1rem;
+            }
+
+            .empty-legends {
+                background-color: green;
+                width: 1rem;
+                height: 1rem;
+                border: none;
+                border-radius: .1rem;
+            }
+        }
+    }
+
+
+
+    .table-container {
+        margin-bottom: 2rem;
+
+        @media(max-width:768PX) {
+            overflow-x: scroll;
+            width: calc(100vw - 182px);
+            /* overflow-y: scroll; */
+            /* height: calc(100% - 634px); */
+        }
+
+        table {
+            background-color: black;
+            width: 100%;
+            margin-bottom: 2rem;
+            color: rgb(194, 194, 194);
+
+            tr {
+                display: flex;
+                justify-content: center;
+                gap: 1rem;
+                padding: .5rem;
+
+                .seats-row {
+                    display: flex;
+                    gap: 4rem;
+                    justify-content: center;
+
+                    .seats-container {
+                        display: flex;
+                        gap: 1rem;
+
+                        .seat {
+                            width: 24px;
+                            height: 24px;
+                            background-color: rgb(95, 95, 95);
+                            text-align: center;
+                            border-radius: .2rem;
+                            cursor: pointer;
+                        }
+
+                        .seat:hover {
+                            background-color: #2dc492;
+                        }
+
+                        .seat:active {
+                            background-color: #2dc492;
+                        }
+
+                        .seat:focus {
+                            background-color: #2dc492;
+                        }
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+
+    .movie-screen-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3rem;
+
+
+        .movie-screen {
+            background-color: #0dcaf0;
+            width: 15rem;
+            height: 7px;
+            border-radius: 0 0 10px 10px;
+        }
+    }
+
+    .days-time-container {
+        @media(max-width:768PX) {
+            display: grid;
+            grid-template-columns: 5rem 5rem;
+            margin-bottom: 2rem;
+            column-gap: 1rem;
+        }
+
+        .days-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 1rem;
+
+            @media(max-width:992PX) {
+                gap: 1rem;
+            }
+
+            @media(max-width:768PX) {
+                flex-direction: column;
+                margin-bottom: 0;
+                row-gap: 1rem;
+
+            }
+
+            .days-btn {
+                background-color: rgb(95, 95, 95);
+                width: 4rem;
+                height: 5rem;
+                border-radius: .5rem;
+                border: none;
+                color: rgb(194, 194, 194);
+
+                @media(max-width:992PX) {
+                    width: 3rem;
+                    height: 4rem;
+                }
+
+                @media(max-width:768PX) {
+                    width: 4rem;
+                    height: 2rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 0.3rem;
+
+                }
+
+                p {
+                    margin-bottom: 0;
+                }
+
+            }
+
+            .days-btn:hover {
+                background-color: #2dc492;
+                color: white;
+            }
+
+            .days-btn:focus {
+                background-color: #2dc492;
+                color: white;
+
+            }
+
+
+        }
+
+        .time-status-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8rem;
+            margin-bottom: 5rem;
+
+            @media(max-width:992PX) {
+                gap: 3rem;
+
+            }
+
+            @media(max-width:768PX) {
+                flex-direction: column;
+                gap: 1rem;
+                margin-bottom: 0;
+            }
+
+            .time-btn {
+                background-color: rgb(95, 95, 95);
+                width: 4rem;
+                height: 2rem;
+                border-radius: .5rem;
+                color: rgb(194, 194, 194);
+
+                @media(max-width:768PX) {
+
+                    width: 3rem;
+
+                }
+            }
+
+            .time-btn:hover {
+                background-color: #2dc492;
+                color: white;
+            }
+
+            .time-btn:focus {
+                background-color: #2dc492;
+                color: white;
+
+            }
+
+        }
+    }
+
+
+    .book-btn-container {
+        display: flex;
+        justify-content: right;
+
+        .book-btn {
+            background-color: red;
+            width: 6rem;
+            height: 3rem;
+            border-radius: .5rem;
+            font-size: 1.2rem;
+            margin-right: 4rem;
+            border: none;
+            color: white;
+        }
+
+        .book-btn:hover {
+            background-color: red;
+            color: white;
+        }
+
+        .book-btn:active {
+            background-color: red;
+            color: white;
+            border: none;
+        }
+
+        .book-btn:focus {
+            background-color: red;
+            color: white;
+            border: none;
+
+        }
+
+    }
+
+    .booking-modal {
+        // display: none;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 200;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .booking-card {
+            width: 400px;
+            height: 525px;
+            background-color: #454242;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            border: 1px solid #514f4f;
+
+            .card-head {
+
+                .title-text {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    text-align: center;
+                    color: rgb(218, 218, 218);
+                }
+
+                .movie-poster-img {
+                    margin-bottom: 1.5rem;
+                }
+            }
+
+
+            .movie-info {
+                margin-bottom: 2rem;
+                color: #b3afaf;
+
+                .movie-name-row {
+                    display: flex;
+                    gap: 2rem;
+                    margin-bottom: .5rem;
+
+                    .movie-name-column-1 {
+                        width: 7rem;
+                    }
+                }
+
+                .cost-container {
+                    
+                    padding-block: 0.4rem;
+                    text-align: center;
+                    color: red;
+                    font-weight: bold;
+                    border: 1px dotted grey;
+                    border-radius: 0.3rem;
+
+                }
+            }
+
+            .card-bottom-btns {
+                .pay-btn {
+                    width: 100%;
+                    background-color: #ed5c5c;
+                    border: none;
+                    padding-block: .5rem;
+                    border-radius: .3rem;
+                    color: white;
+                    margin-bottom: 1rem;
+                }
+
+                .cancel-btn {
+                    width: 100%;
+                    background-color: #2b2a2a;
+                    padding-block: 0.3rem;
+                    border: 1px solid #898989;
+                    border-radius: 0.3rem;
+                    color: white;
+
+                }
+            }
+
+        }
+    }
+
+
+}

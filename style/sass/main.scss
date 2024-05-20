@@ -1,0 +1,23 @@
+// Base
+@import"./base/global";
+@import "./base/variables";
+@import "./base/utility";
+@import "./base/typography";
+
+// Components
+@import "./components/header";
+@import "./components/sidebar";
+@import "./components/modals";
+@import "./components/cards";
+@import "./components/footer";
+
+
+// Eelements
+@import "./elements/buttons";
+@import "./elements/inputs";
+
+
+//Page 
+@import "./pages/book-ticket";
+@import "./pages/movie-ticket";
+@import "./pages/my-profile";
