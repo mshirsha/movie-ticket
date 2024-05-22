@@ -290,24 +290,21 @@
             margin-right: 4rem;
             border: none;
             color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        .book-btn:hover {
-            background-color: red;
-            color: white;
+        .book-btn:hover{
+            background-color: rgb(202, 5, 5);
         }
-
-        .book-btn:active {
-            background-color: red;
-            color: white;
-            border: none;
+        .book-btn:active{
+            background-color: rgb(163, 4, 4);
         }
-
-        .book-btn:focus {
-            background-color: red;
-            color: white;
-            border: none;
-
+        .book-btn:focus{
+            outline: 2px solid rgb(245, 168, 168);
+            outline-offset: 2px;
+            outline-style: dotted;
         }
 
     }

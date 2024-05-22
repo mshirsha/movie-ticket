@@ -297,20 +297,20 @@ header {
   margin-right: 4rem;
   border: none;
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .booking-ticket-container .book-btn-container .book-btn:hover {
-  background-color: red;
-  color: white;
+  background-color: rgb(202, 5, 5);
 }
 .booking-ticket-container .book-btn-container .book-btn:active {
-  background-color: red;
-  color: white;
-  border: none;
+  background-color: rgb(163, 4, 4);
 }
 .booking-ticket-container .book-btn-container .book-btn:focus {
-  background-color: red;
-  color: white;
-  border: none;
+  outline: 2px solid rgb(245, 168, 168);
+  outline-offset: 2px;
+  outline-style: dotted;
 }
 .booking-ticket-container .booking-modal {
   display: none;
@@ -803,7 +803,7 @@ body {
     justify-content: unset;
   }
 }
-.movie-details-content .movie-info-container .cinema-book-ticket-container button {
+.movie-details-content .movie-info-container .cinema-book-ticket-container a {
   background-color: red;
   padding-block: 1.25rem;
   padding-inline: 4rem;
@@ -812,14 +812,25 @@ body {
   border-radius: 0.3rem;
 }
 @media (max-width: 1574px) {
-  .movie-details-content .movie-info-container .cinema-book-ticket-container button {
+  .movie-details-content .movie-info-container .cinema-book-ticket-container a {
     padding-inline: 3rem;
   }
 }
 @media (max-width: 575px) {
-  .movie-details-content .movie-info-container .cinema-book-ticket-container button {
+  .movie-details-content .movie-info-container .cinema-book-ticket-container a {
     width: 100%;
   }
+}
+.movie-details-content .movie-info-container .cinema-book-ticket-container .book-ticket-btn:hover {
+  background-color: rgb(202, 5, 5);
+}
+.movie-details-content .movie-info-container .cinema-book-ticket-container .book-ticket-btn:active {
+  background-color: rgb(163, 4, 4);
+}
+.movie-details-content .movie-info-container .cinema-book-ticket-container .book-ticket-btn:focus {
+  outline: 2px solid rgb(245, 168, 168);
+  outline-offset: 2px;
+  outline-style: dotted;
 }
 
 .movie-img-container {
@@ -1241,10 +1252,21 @@ body {
     width: 100%;
   }
 }
-.my-profile-glob-container .my-profile-container .personal-details-conatiner .personal-details-content .save-btn button {
+.my-profile-glob-container .my-profile-container .personal-details-conatiner .personal-details-content .save-btn-container button {
   background-color: red;
   padding-inline: 2rem;
   color: white;
+}
+.my-profile-glob-container .my-profile-container .personal-details-conatiner .personal-details-content .save-btn-container .save-btn:hover {
+  background-color: rgb(202, 5, 5);
+}
+.my-profile-glob-container .my-profile-container .personal-details-conatiner .personal-details-content .save-btn-container .save-btn:active {
+  background-color: rgb(163, 4, 4);
+}
+.my-profile-glob-container .my-profile-container .personal-details-conatiner .personal-details-content .save-btn-container .save-btn:focus {
+  outline: 2px solid rgb(245, 168, 168);
+  outline-offset: 2px;
+  outline-style: dotted;
 }
 .my-profile-glob-container .my-profile-container .personal-details-conatiner .personal-details-content .form-control {
   width: unset;

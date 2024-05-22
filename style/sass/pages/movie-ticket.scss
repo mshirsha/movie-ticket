@@ -540,7 +540,7 @@ body {
 
             }
 
-            button {
+           a {
                 background-color: red;
                 padding-block: 1.25rem;
                 padding-inline: 4rem;
@@ -561,6 +561,17 @@ body {
                     width: 100%;
 
                 }
+            }
+            .book-ticket-btn:hover{
+                background-color: rgb(202, 5, 5);
+            }
+            .book-ticket-btn:active{
+                background-color: rgb(163, 4, 4);
+            }
+            .book-ticket-btn:focus{
+                outline: 2px solid rgb(245, 168, 168);
+                outline-offset: 2px;
+                outline-style: dotted;
             }
         }
 

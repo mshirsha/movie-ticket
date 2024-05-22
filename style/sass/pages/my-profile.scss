@@ -162,13 +162,25 @@
                         }
                     }
                 }
-                .save-btn{
+                .save-btn-container{
                     button{
                         background-color: red;
                         padding-inline: 2rem;
                         color: white;
                     }
+                    .save-btn:hover{
+                        background-color: rgb(202, 5, 5);
+                    }
+                    .save-btn:active{
+                        background-color: rgb(163, 4, 4);
+                    }
+                    .save-btn:focus{
+                        outline: 2px solid rgb(245, 168, 168);
+                        outline-offset: 2px;
+                        outline-style: dotted;
+                    }
                 }
+
                 .form-control {
                     width: unset;
     
