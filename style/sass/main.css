@@ -313,6 +313,7 @@ header {
   border: none;
 }
 .booking-ticket-container .booking-modal {
+  display: none;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 200;
@@ -320,7 +321,6 @@ header {
   top: 0;
   bottom: 0;
   right: 0;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
