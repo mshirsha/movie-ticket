@@ -587,11 +587,13 @@ body {
 .movies-img img {
   height: 100%;
   object-fit: cover;
-  filter: opacity(90%);
+  opacity: 0.9;
+  filter: grayscale(30%);
   transition: transform 0.4s ease-in-out;
 }
 .movies-img img:hover {
-  filter: opacity(100%);
+  filter: grayscale(0%);
+  opacity: 1;
   transform: scale(1.075);
 }
 

@@ -293,14 +293,16 @@ body {
     img{
         height: 100%;
         object-fit: cover;
+        opacity: .9;
 
 
-        filter: opacity(90%);
+        filter: grayscale(30%);
         transition: transform 0.4s ease-in-out;
 
 
         &:hover{
-            filter: opacity(100%) ;
+            filter: grayscale(0%) ;
+            opacity:1;
             transform: scale(1.075) ; 
             
         }
