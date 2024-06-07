@@ -1,0 +1,32 @@
+header{
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    top: 0; left:0; right: 0;
+    z-index: 100;
+    box-shadow: 0px 4px 16px rgba(0,0,0,.8) ;
+  }
+
+
+  
+.navbar{
+    padding-top: 1rem;
+    padding-bottom: unset;
+  
+    .header-icons-btn{
+      border: none;
+      background-color: black;
+      svg{
+        width: 24px;
+        fill: white;
+        height: 24px;
+      }
+      svg:hover{
+        fill: red;
+      }
+      svg:active{
+        fill: red;
+      }
+    }
+    
+  }
+    

@@ -12,31 +12,12 @@ body{
    font-family: 'Inter', sans-serif;
    
 }
-header{
-  background-color: black;
-}
-.navbar{
-  padding-top: 1rem;
-  padding-bottom: unset;
 
-  .header-icons-btn{
-    border: none;
-    background-color: black;
-    svg{
-      width: 24px;
-      fill: white;
-      height: 24px;
-    }
-    svg:hover{
-      fill: red;
-    }
-    svg:active{
-      fill: red;
-    }
-  }
-  
+
+p{
+  margin: 0;
 }
-  
+
   /* For Webkit browsers like Chrome and Safari */
   *::-webkit-scrollbar {
     width: 4px;
