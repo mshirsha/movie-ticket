@@ -61,6 +61,7 @@ header {
 
 .booking-tickets-global-contr {
   background-color: black;
+  padding-top: 6rem;
   padding: 2rem;
   display: flex;
   justify-content: center;
@@ -496,11 +497,6 @@ body {
   .main-container {
     grid-template-columns: 1fr;
     grid-template-rows: none;
-  }
-}
-@media (max-width: 400px) {
-  .main-container {
-    padding: 0.5rem;
   }
 }
 .main-container .row {
@@ -1135,6 +1131,7 @@ body {
   background-color: black;
   height: calc(100% - 90px);
   padding-block: 2rem;
+  padding-top: 6rem;
   display: grid;
   grid-template-columns: 15rem 1fr 15rem;
 }
