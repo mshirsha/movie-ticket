@@ -59,6 +59,16 @@ header {
   fill: red;
 }
 
+.footer-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+@media (max-width: 658px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 .booking-tickets-global-contr {
   background-color: black;
   padding-top: 6rem;
@@ -716,6 +726,15 @@ body {
 .movie-details-content .movie-info-inner-container .movie-info-wrap .movie-info-value p:nth-child(2) {
   color: rgb(146, 146, 146);
 }
+.movie-details-content .video-chip {
+  height: 175px;
+  width: 100%;
+}
+@media (max-width: 1535px) {
+  .movie-details-content .video-chip {
+    height: 155px;
+  }
+}
 .movie-details-content .movie-info-container {
   height: 87%;
 }
@@ -950,6 +969,9 @@ body {
   color: rgb(216, 213, 213);
   background-color: #232222;
 }
+.watched-cards-container .watched-cards .movie-card-content .card-title {
+  font-weight: 600;
+}
 .watched-cards-container .watched-cards .movie-card-content button {
   padding-block: 0.5rem;
   padding-inline: 1rem;
@@ -980,6 +1002,10 @@ body {
 .rate-text .rating-container .num-text {
   color: orange;
   margin-top: 0.2rem;
+}
+
+.remove-btn:hover {
+  background-color: #6b6666 !important;
 }
 
 .search-modal {

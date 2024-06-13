@@ -463,6 +463,13 @@ body {
         }
     }
 
+    .video-chip{
+        height: 175px;
+        width:100%;
+        @media(max-width:1535px) {
+            height: 155px;
+        } 
+    }
     .movie-info-container {
         height: 87%;
 
@@ -851,6 +858,9 @@ body {
             color: rgb(216, 213, 213);
             background-color: #232222;
 
+            .card-title{
+                font-weight: 600;
+            }
             button {
                 padding-block: .5rem;
                 padding-inline: 1rem;
@@ -890,7 +900,10 @@ body {
     }
 }
 
+.remove-btn:hover{
+    background-color: #6b6666 !important;
 
+}
 
 // search modal //
 .search-modal {
